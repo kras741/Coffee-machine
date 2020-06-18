@@ -13,7 +13,7 @@
   background-color: rgba(50, 50, 50, 0.7);
 }
 .coffee-item img {
-  size: 78px;
+  
   background-color: white;
   border-radius: 50%;
   height: 100px;
@@ -37,4 +37,12 @@
 }
 .cup img {
   width: 100%;
+}
+.atm {
+  width: 100%;
+}
+.change-box {
+  background: grey;
+  border: 2px solid black;
+  min-height: 100px;
 }

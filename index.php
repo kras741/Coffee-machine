@@ -56,8 +56,20 @@
               </div>
             </div>
             <div class="col-6"><!--input+ATM+change-->
-            
+              <div class="input-group mb-3">
+                <input type="text" class="form-control balance" placeholder="Balance">
+                  <div class="input-group-append">
+                    <span class="input-group-text">руб. ( &#x20BD; )</span>
+                  </div>
+              </div>
+              <div class="atm">
+                <img src="img/bill_acc.png" alt="">
+              </div>
+              <button class="btn btn-primary btn-block mt-3 change-btn">Сдача (Change)</button><!--btn - кнопка, btn-primary - синий фон с белым шрифтом, btn-block - во всю ширину-->
+              <div class="change-box mt-3">
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
