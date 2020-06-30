@@ -19,19 +19,19 @@
       <div class="row">
         <div class="col-6 coffee-list"><!--Левая сторона "Выбор кофе"-->
           <div class="row flex-column justify-content-around">
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee('Американо', 50, this)">
               <img src="img/americano.png" alt="Американо">
               <span>Американо - 50 p.</span>  
             </div>
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee('Каппуччино', 92, this)">
               <img src="img/cappuccino.png" alt="Каппуччино">
               <span>Каппуччино - 92 p.</span>  
             </div>
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee('Эспрессо', 66, this)">
               <img src="img/espresso.png" alt="Эспрессо">
               <span>Эспрессо - 66 p.</span>  
             </div>
-            <div class="coffee-item">
+            <div class="coffee-item" onclick="cookCoffee('Латте', 12, this)">
               <img src="img/latte.jpg" alt="Латте">
               <span>Латте - 128 p.</span>  
             </div>
@@ -46,7 +46,7 @@
             <div class="col-6"><!--Display+cup-->
               <div class="display">
                 <div class="progress mt-2">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                   </div>
                 </div>
                 <span class="display-text">Выберите кофе</span>
@@ -73,8 +73,11 @@
           </div>
         </div>
       </div>
-      
-      
+      <div class="money">
+        <img src="img/50rub.jpg" alt="">
+        <img src="img/100rub.jpg" alt="">
+        <img src="img/500rub.jpg" alt="">
+      </div>
       
     </div>
     

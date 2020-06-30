@@ -33,7 +33,16 @@
   border: 2px solid darkgreen;
   min-height:100px;
   padding: 10px;
-  
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.cup {
+   display:none;
+   opacity:0;
+ 
 }
 .cup img {
   width: 100%;
@@ -45,4 +54,8 @@
   background: grey;
   border: 2px solid black;
   min-height: 100px;
+}
+
+.money img {
+  width: 20%;
 }
