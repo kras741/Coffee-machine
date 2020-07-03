@@ -31,7 +31,7 @@
               <img src="img/espresso.png" alt="Эспрессо">
               <span>Эспрессо - 66 p.</span>  
             </div>
-            <div class="coffee-item" onclick="cookCoffee('Латте', 12, this)">
+            <div class="coffee-item" onclick="cookCoffee('Латте', 128, this)">
               <img src="img/latte.jpg" alt="Латте">
               <span>Латте - 128 p.</span>  
             </div>
@@ -57,12 +57,13 @@
             </div>
             <div class="col-6"><!--input+ATM+change-->
               <div class="input-group mb-3">
-                <input type="text" class="form-control balance" placeholder="Balance">
+                <input type="text" class="form-control balance" placeholder="Balance" readonly>
                   <div class="input-group-append">
                     <span class="input-group-text">руб. ( &#x20BD; )</span>
                   </div>
               </div>
               <div class="atm">
+                <div class="cash-catcher"></div>
                 <img src="img/bill_acc.png" alt="">
               </div>
               <button class="btn btn-primary btn-block mt-3 change-btn">Сдача (Change)</button><!--btn - кнопка, btn-primary - синий фон с белым шрифтом, btn-block - во всю ширину-->
@@ -74,9 +75,9 @@
         </div>
       </div>
       <div class="money">
-        <img src="img/50rub.jpg" alt="">
-        <img src="img/100rub.jpg" alt="">
-        <img src="img/500rub.jpg" alt="">
+        <img src="img/50rub.jpg" cost="50" alt="">
+        <img src="img/100rub.jpg" cost="100" alt="">
+        <img src="img/500rub.jpg" cost="500" alt="">
       </div>
       
     </div>
