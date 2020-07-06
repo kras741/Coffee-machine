@@ -13,7 +13,7 @@ function cookCoffee(name, price, elem) {
   if (balance.value >= price) {
     balance.value -= price;
     balance.style.backgroundColor = "";
-    changeDisplayText("Ваш кофе " + name + " готовится...");
+    changeDisplayText("Ваш " + name + " готовится...");
     cup.changeCupImage(cupSrc);
     state = "cooking";
     startCooking();
@@ -134,6 +134,10 @@ function swollowInBill(bill) {
     bill.style.transform = "translateY(50%) rotate(90deg)";
     setTimeout(function(){
       bill.style.transform = "translateY(-200%) rotate(90deg)";
+        bill.ontransitionend = function() {
+          console.log("Троанзиция закончилась");
+          bill.remove();
+        }
     }, 10)
 }
    
